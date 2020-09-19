@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    // --------------------------- fav Icon --------------------------
+    link(rel="shortcut icon" href="./assets/img/logo.svg")
+    // --------------------------- SCSS --------------------------
+    link(rel="stylesheet" href="./scss/main.scss")
+    // --------------------------- B4 Grid --------------------------
+    link(rel="stylesheet" href="./assets/lib/bootstrap-grid.min.css")
+    title Digits
+
+
+  body
+    //- ==================== HEADER ======================================  
+    .container
+      header.row
+
+        .logo.col: img(src=`./assets/img/logo.svg`)
+
+        nav.col
+          ul
+            li: a(href="#") Homepages
+            li: a(href="#") Products
+            li: a(href="#") Company
+            li: a(href="#") Pricing
+            li: a(href="#") Blog
+
+        .contact
+          .tel.col +00 123 456 789
+          button.col Contact Us
+
+    .container-fluid
+      .header2.row
+
+        h1 Good design meets<br> great user experience
+        p.col-sm-12 For everyone, from beginners to experts
+        .btn
+          button Buy Digits
+          button See the Features
+        img.col-sm-12(src=`./assets/img/header2img.svg`)
+
+
+    //- ==================== COMPANIES ======================================  
+    .container
+      .companies
+
+        .row
+          h1.col-sm-12 Trusted by forward-thinking software teams around the world
+
+        .logos
+          img(src=`./assets/img/companies/logo-1.svg`)
+          img(src=`./assets/img/companies/logo-2.svg`)
+          img(src=`./assets/img/companies/logo-3.svg`)
+          img(src=`./assets/img/companies/logo-4.svg`)
+          img(src=`./assets/img/companies/logo-5.svg`)
+          img(src=`./assets/img/companies/logo-6.svg`)
+          img(src=`./assets/img/companies/logo-7.svg`)
+
+
+    //- ==================== About ======================================  
+    .container
+      .about
+
+        //- Title ===================
+        .title Whatever work you do,<br> we're able to help
+        
+        .grid 
+
+          //- Image ===================
+          .img: img(src=`./assets/img/about/about.png`)
+
+          //- Info ====================
+          .info
+
+            .info-box
+              img(src=`./assets/img/about/Icon-1.svg`)
+              .text
+                h1 Design and Assets
+                p Make your brand stand out with pixel-perfect design crafted to perfection.
+
+            .info-box
+              img(src=`./assets/img/about/Icon-2.svg`)
+              .text
+                h1 Easy Content
+                p Import your demos or build pages visually. Bonus: All images and illustrations included!
+
+            .info-box
+              img(src=`./assets/img/about/Icon-3.svg`)
+              .text
+                h1 Fast and Reliable
+                p No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+
+
+    //- ==================== PORTFOLIO ======================================  
+    .portfolio.container-fluid
+
+        .head
+          h1 Simplicity meets innovative design
+          p It's really easy to start using Digits<br>.Install the theme, choose a demo and<br> start designing the future of your business!
+          button Buy Digits
+
+        img(src=`./assets/img/portfolio.png`)
+
+    //- ==================== TESTIMONIALS ======================================  
+    .testimonials.container
+
+      .title  What others are saying
+
+      .grid
+
+        .testi-box
+
+          p Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!
+
+          .person
+            img(src=`./assets/img/testimonial/img-1.png`)
+            h1 Happy User
+            span tempy.club
+
+        .testi-box
+
+          p Really easy to use and customize. easy to understand. Darinka helped me with my site! She answers very quickly, a good service! Thank you very much!
+
+          .person
+            img(src=`./assets/img/testimonial/img-2.png`)
+            h1 Happy User
+            span tempy.club
+
+        .testi-box
+
+          p Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.
+
+          .person
+            img(src=`./assets/img/testimonial/img-3.png`)
+            h1 Happy User
+            span tempy.club
+
+
+    //- ==================== CTA ======================================  
+    .cta.container-fluid
+
+      .grid
+
+        .head Ready to launch<br> your next website?
+
+        .btn
+          button
+              img(src=`./assets/img/cpa-btn-icon.png`)
+              |Get in touch now
+
+          p Or, take a peek inside our <span>design studio</span>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,288L20,266.7C40,245,80,203,120,170.7C160,139,200,117,240,117.3C280,117,320,139,360,133.3C400,128,440,96,480,106.7C520,117,560,171,600,176C640,181,680,139,720,128C760,117,800,139,840,154.7C880,171,920,181,960,197.3C1000,213,1040,235,1080,213.3C1120,192,1160,128,1200,122.7C1240,117,1280,171,1320,160C1360,149,1400,75,1420,37.3L1440,0L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+
+    //- ==================== FOOTER ======================================  
+    footer.container-fluid
+
+      .grid
+
+        .logo
+          img(src=`./assets/img/logo.svg`)
+          p Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.
+
+        .pages
+          h1 Pages
+          ul
+            li: a(href="#") Home
+            li: a(href="#") About
+            li: a(href="#") News
+            li: a(href="#") Pricing
+            li: a(href="#") Contact
+
+        .demos
+          h1 Demos
+          ul
+            li: a(href="#") Classic
+            li: a(href="#") Boxy
+            li: a(href="#") Gradient
+            li: a(href="#") Minimal
+            li: a(href="#") Night
+
+        .resources
+          h1 Resoures
+          .social: img(src=`./assets/img/footer-social.svg`)
+          h3 Download now<br> Documentation
+
+      .grid2  
+
+        .copy-right Copyright © 2020 tempy.club
+
+        nav
+          ul
+            li: a(href="#") Privacy Policy
+            li: a(href="#") Terms of Use
+            li: a(href="#") GDPR
+
+        h3 Made by: 
+          a(href="https://github.com/moghaazi", target="_blank") Moghazi
+
+
+
+    // ----------------------------- Js ----------------------------
+    script(src="./main.js")

@@ -1,0 +1,85 @@
+// --------------------------- Import ----------------------------------------
+@import './helpers/varibles'; // varibles
+@import './components/btn'; // btn
+
+@import './layout/header'; // header
+@import './layout/companies'; // companies
+@import './layout/about'; // about
+@import './layout/portfolio'; // portfolio
+@import './layout/testi'; // testi
+@import './layout/cta'; // cta
+@import './layout/footer'; // footer
+
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap');
+
+// --------------------------- Global --------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+// .container,
+// .container-fluid {
+//   width: 100%;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// .containe {
+//   @media (min-width: 576px) {
+//     max-width: 540px;
+//   }
+
+//   @media (min-width: 768px) {
+//     max-width: 720px;
+//   }
+
+//   @media (min-width: 992px) {
+//     max-width: 960px;
+//   }
+
+//   @media (min-width: 1200px) {
+//     max-width: 1140px;
+//   }
+// }
+
+::selection {
+  background-color: #111;
+  color: #fff;
+}
+
+// Custom Scroll Bar
+// For Firefox
+:root {
+  scrollbar-color: #666 #222 !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 1.1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #14abe6, #0eb1f1);
+  border-radius: 5rem;
+}

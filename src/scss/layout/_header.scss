@@ -1,0 +1,162 @@
+@import './helpers/varibles'; // varibles
+@import './components/btn'; // btn
+
+header {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+
+  // sm 576px
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+
+  // Logo
+  .logo {
+    // md 768px
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Nav
+  nav {
+    // sm 576px
+    @media (max-width: 576px) {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    ul {
+      all: unset;
+      display: flex;
+
+      // sm 576px
+      @media (max-width: 576px) {
+        flex-direction: column;
+      }
+
+      li {
+        all: unset;
+        margin: 2rem;
+
+        a {
+          all: unset;
+          font: bold 1.6rem 'Nunito', sans-serif;
+          color: $darkBlue;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  // Contact
+  .contact {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    // sm 576px
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    // Tel
+    .tel {
+      font: bold 1.6rem 'Nunito', sans-serif;
+      color: $darkBlue;
+      // sm 576px
+      @media (max-width: 576px) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    // Btn
+    button {
+      @extend %btn;
+    }
+  }
+}
+
+.header2 {
+  padding-top: 9rem;
+  height: 80rem;
+  background: linear-gradient(to bottom, #f2f9ff23, #f2f9ffb6);
+  margin-bottom: 40rem;
+
+  // Header
+  h1 {
+    font: bold 5.6rem 'Nunito', sans-serif;
+    color: $darkBlue;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    // sm 576px
+    @media (max-width: 576px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  // Paragraph
+  p {
+    font: bold 1.8rem 'Nunito', sans-serif;
+    color: $lightBlue;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  // Btns
+  .btn {
+    display: flex;
+    margin: 0 auto;
+
+    margin-bottom: 6rem;
+
+    // sm 576px
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    :first-child {
+      all: unset;
+      border-radius: 50px;
+      padding: 1.5rem 3.5rem;
+      color: #fff;
+      font: bold 1.6rem 'Nunito', sans-serif;
+      background-color: #3751ff;
+      cursor: pointer;
+      margin-right: 2rem;
+
+      // sm 576px
+      @media (max-width: 576px) {
+        margin-bottom: 2rem;
+        margin-right: -0.7rem;
+      }
+    }
+
+    :last-child {
+      all: unset;
+      border-radius: 50px;
+      padding: 1.5rem 3.5rem;
+      color: #fff;
+      font: bold 1.6rem 'Nunito', sans-serif;
+      background-color: #3751ff;
+      cursor: pointer;
+      background-color: #fff;
+      color: $lightBlue;
+      box-shadow: 1px 1px 4px #bbbbbb;
+    }
+  }
+
+  // Img
+  img {
+    width: 100%;
+  }
+}

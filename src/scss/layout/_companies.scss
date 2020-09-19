@@ -1,0 +1,47 @@
+.companies {
+  margin-bottom: 13rem;
+
+  // lg 992px
+  @media (max-width: 992px) {
+    margin-top: -20rem;
+  }
+
+  // md 768px
+  @media (max-width: 768px) {
+    margin-top: -28rem;
+  }
+
+  h1 {
+    font: bold 1.6rem 'Nunito', sans-serif;
+    color: $lightBlue;
+    opacity: 0.5;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .logos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3.5rem;
+    grid-template-columns: repeat(auto-fit, 10rem);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+
+  .card-box {
+    height: 60rem;
+    background-color: #00f7ff;
+    border-radius: 10px;
+  }
+}

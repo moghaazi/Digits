@@ -1,0 +1,48 @@
+@import './helpers/varibles'; // varibles
+@import './components/btn'; // btn
+
+.portfolio {
+  padding-top: 8rem;
+  background-color: #fff9ea;
+  margin-bottom: 15rem;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: $darkBlue;
+      font: bold 4.8rem 'Nunito', sans-serif;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    p {
+      color: $lightBlue;
+      font: bold 2.1rem 'Nunito', sans-serif;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    button {
+      all: unset;
+      border-radius: 50px;
+      padding: 1.5rem 3.5rem;
+      color: #fff;
+      font: bold 1.6rem 'Nunito', sans-serif;
+      background-color: #3751ff;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-top: -25rem;
+    // lg 992px
+    @media (max-width: 992px) {
+      margin-top: -15rem;
+    }
+  }
+}
